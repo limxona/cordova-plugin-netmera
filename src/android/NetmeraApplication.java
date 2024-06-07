@@ -22,8 +22,6 @@ public class NetmeraApplication extends Application {
             String netmeraBaseUrl = parser.getPreferences().getString("NetmeraBaseUrl", null);
 
             if (netmeraKey != null && netmeraFCM != null) {
-                //Netmera.init(this, netmeraFCM, netmeraKey);
-
               NetmeraConfiguration.Builder configBuilder = new NetmeraConfiguration.Builder();
               configBuilder
                 .baseUrl(netmeraBaseUrl)
